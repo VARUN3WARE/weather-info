@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 
 def get_coordinates(location_name):
     """Convert location name into latitude and longitude using OpenCage Geocoding API."""
-    api_key = "1e5a8a24f5dc4974ab27802522a7c7e8"  # Replace with your OpenCage API key
+    api_key = "opencage_api_key"  # Replace with your OpenCage API key
     url = f"https://api.opencagedata.com/geocode/v1/json?q={location_name}&key={api_key}"
 
     response = requests.get(url)
